@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 
 app.get('/data', async (req, res) => {
-  const url = 'http://example.com/'; // Replace with the actual URL
+  const url = 'http://google.com/'; // Replace with the actual URL
   const response = await axios.get(url);
   res.send(response.data);
 });
