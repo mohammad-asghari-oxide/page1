@@ -1,0 +1,6 @@
+steps:
+  - name: Generate output link
+    run: |
+      echo "Generating output link..."
+      link=$(curl -s -X GET https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/jobs/0/artifacts)
+      echo "$link"
